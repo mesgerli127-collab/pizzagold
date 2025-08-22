@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PizzaGold</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="./img/pizza-gold-high-resolution-logo-transparent.png" alt="stepFORM logo">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" style="color: gold;">Çatdırılma Pulsuzdur</a>
+                    <!-- <div class="dropdown">
+                        <a href="#">Forms ▾</a>
+                        <a href="#">Surveys</a>
+                        <a href="#">Quizzes</a>
+                    </div> -->
+                </li>
+                <li>
+                    <a href="#">Məşhur Pizzalar ▾</a>
+                    <div class="dropdown">
+                        <a href="#">Margaritta</a>
+                        <a href="#">Qarışıq Pizza</a>
+                        <a href="#">Sosisqalı Pizza</a>
+                        <a href="#">Toyuqlu Pizza</a>
+                        <a href="#">Peperonili Pizza</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Ödəniş ▾</a>
+                    <div class="dropdown">
+                        <a href="#">Nağd</a>
+                        <a href="#">Kart</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Kömək ▾</a>
+                    <div class="dropdown">
+                        <a href="#">+994 55 334 54 64</a>
+                        <a href="#">+994 77 334 54 64</a>
+                        <a href="#">PizzaGold@gmail.com</a>
+                        <!-- <a href="#"></a> -->
+                    </div>
+                </li>
+                <li><a href="#">Haqqımızda</a></li>
+            </ul>
+        </nav>
+
+        <div style="display:flex; align-items:center; gap:15px;">
+            <div class="lang" id="langToggle">
+                <i class="ri-global-line"></i>
+                <div class="lang-dropdown">
+                    <a href="#">English</a>
+                    <a href="#">Русский</a>
+                </div>
+            </div>
+            <button class="btn signin">Hesab yarat</button>
+            <button class="btn signup">Giriş et</button>
+        </div>
+
+        <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+            <span id="cart-count">0</span>
+        </div>
+
+
+    </header>
+
+    <section class="sct1">
+        <div>
+            <h1 class="gold"><span>Pizza</span>Gold</h1>
+            <h3 class="soz">Hər cur mətbəxdən yeməklər</h3>
+            <h4 class="soz2">20 Növ Pizza 🍕</h4>
+            <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod blanditiis. Ullam
+                accusamus inventore dolor temporibus! Eos doloribus odit iure labore harum sequi tempore, nesciunt ad
+                aliquam dolore ipsa enim pore, nesciunt ad
+                aliquam dolore ipsa enim pm.</p>
+            <button class="btn order">İndicə Sipariş et</button>
+
+        </div>
+
+    </section>
+    <section class="piz" style="width: 100%; height: 99em; padding: 20px;">
+
+
+        <h1 class="de">Pizzalarımız</h1>
+
+        <div class="pizza-section">
+            <!-- 1 -->
+            <div class="pizza-card">
+                <img src="./img/margeritta.jpg" alt="Margarita">
+                <h3>Margarita</h3>
+                <p>Pomidor, Pendir, Reyhan</p>
+                <p class="price">10 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 2 -->
+            <div class="pizza-card">
+                <img src="./img/americano.jpg1.webp" alt="Americano">
+                <h3>Americano</h3>
+                <p>Pomidor, Pendir, Sosis, Göbələk</p>
+                <p class="price">15 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 3 -->
+            <div class="pizza-card">
+                <img src="./img/acili-pizza.jpg" alt="Acılı Peperoneli">
+                <h3>Acılı Peperoneli</h3>
+                <p>Pomidor, Pendir, Acı Peperoni</p>
+                <p class="price">20 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 4 -->
+            <div class="pizza-card">
+                <img src="./img/clasic.jpg" alt="Klasik">
+                <h3>Klasikolu</h3>
+                <p>Pomidor, Pendir, Kolbasa</p>
+                <p class="price">15 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 5 -->
+            <div class="pizza-card">
+                <img src="./img/sosisli.jpg" alt="Sosisli">
+                <h3>Sosisli</h3>
+                <p>Pendir, Sosis, Pomidor Sosu</p>
+                <p class="price">12 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 6 -->
+            <div class="pizza-card">
+                <img src="./img/vegetarian.jpg" alt="Vejetaryen">
+                <h3>Vejetaryen</h3>
+                <p>Pomidor, Pendir, Zeytun, Göbələk, Biber</p>
+                <p class="price">18 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 7 -->
+            <div class="pizza-card">
+                <img src="./img/fungi.jpg" alt="Fungi">
+                <h3>Fungi</h3>
+                <p>Pendir, Göbələk, Pomidor Sosu</p>
+                <p class="price">15 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 8 -->
+            <div class="pizza-card">
+                <img src="./img/kan poffo.jpg" alt="Kan Poffo">
+                <h3>Kan Poffo</h3>
+                <p>Pendir, Sosis, Göbələk, Biber</p>
+                <p class="price">20 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 9 -->
+            <div class="pizza-card">
+                <img src="./img/pizza polojpg.jpg" alt="Pizzopolo">
+                <h3>Pizzopolo</h3>
+                <p>Pendir, Toyuq, Pomidor Sosu</p>
+                <p class="price">22 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 10 -->
+            <div class="pizza-card">
+                <img src="./img/beef.jpg" alt="Minked Beef">
+                <h3>Minked Beef</h3>
+                <p>Pomidor, Pendir, Mal əti, Göbələk</p>
+                <p class="price">25 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 11 -->
+            <div class="pizza-card">
+                <img src="./img/yariyariya.jpg" alt="Yarı Yarıya">
+                <h3>Yarı Yarıya</h3>
+                <p>Pomidor, Pendir, Sosis & Toyuq</p>
+                <p class="price">20 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 12 -->
+            <div class="pizza-card">
+                <img src="./img/0_Gold-Pizza-1.jpg" alt="Pizza Gold">
+                <h3>Pizza Gold</h3>
+                <p>Pendir, Zeytun, Toyuq, Sosis, Göbələk</p>
+                <p class="price">25 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 13 -->
+            <div class="pizza-card">
+                <img src="./img/chickenstrip.jpg" alt="Chicken Strips">
+                <h3>Chicken Strips</h3>
+                <p>Pomidor, Pendir, Toyuq Strips</p>
+                <p class="price">20 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 14 -->
+            <div class="pizza-card">
+                <img src="./img/sucuklupizza.jpg" alt="Sucuklu">
+                <h3>Sucuklu</h3>
+                <p>Pendir, Sucuk, Pomidor Sosu</p>
+                <p class="price">18 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 15 -->
+            <div class="pizza-card">
+                <img src="./img/dordfesil.jpg" alt="Dört Fəsil">
+                <h3>Dört Fəsil</h3>
+                <p>Pendir, Göbələk, Zeytun, Sosis</p>
+                <p class="price">22 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 16 -->
+            <div class="pizza-card">
+                <img src="./img/sezar.jpg" alt="Sezar">
+                <h3>Sezar</h3>
+                <p>Pendir, Toyuq, Pomidor Sosu</p>
+                <p class="price">20 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 17 -->
+            <div class="pizza-card">
+                <img src="./img/texsas.jpg" alt="Teksas">
+                <h3>Teksas</h3>
+                <p>Pendir, Mal əti, Biber, Göbələk</p>
+                <p class="price">25 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 18 -->
+            <div class="pizza-card">
+                <img src="./img/special.jpg" alt="Special Off">
+                <h3>Special Off</h3>
+                <p>Pendir, Sosis, Toyuq, Zeytun</p>
+                <p class="price">22 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 19 -->
+            <div class="pizza-card">
+                <img src="./img/balcon.jpg" alt="Balcano">
+                <h3>Balcano</h3>
+                <p>Pendir, Mal əti, Göbələk, Biber</p>
+                <p class="price">25 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+            <!-- 20 -->
+            <div class="pizza-card">
+                <img src="./img/Deluxe-Pizza.jpg" alt="Deluxe">
+                <h3>Deluxe</h3>
+                <p>Pendir, Sosis, Göbələk, Toyuq, Zeytun</p>
+                <p class="price">25 AZN</p>
+                <button onclick="addToCart(this)">Səbətə əlavə et</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FIRSATLAR & KONUM SECTION -->
+    <section class="offers-location">
+        <div class="offers">
+            <h2>🍕 Fursətlər</h2>
+            <div class="super">
+                <img src="./img/images (1).jpg" alt="Pizza Fırsatları" />
+                <img src="./img/menu (2).jpg" alt="Pizza Fırsatları" />
+            </div>
+
+        </div>
+        <div class="location">
+            <h2>📍 Bizi Burada Tapa bilərsiz</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.9709209811965!2d48.503882662781585!3d39.21133922980068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40233328a07579e9%3A0x679391b31adecdb!2sPizza%20Gold!5e0!3m2!1str!2saz!4v1755856748086!5m2!1str!2saz"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="./img/pizza-gold-high-resolution-logo-transparent.png" alt="Pizza Gold Logo">
+                <h2>Pizza Gold</h2>
+                <p>En ləzzətli pizzalar burada!</p>
+            </div>
+
+            <!-- İletişim -->
+            <div class="footer-contact">
+                <h3>Əlaqə</h3>
+                <p><i class="fas fa-phone-alt"></i> +994 50 635 19 44</p>
+                <p><i class="fas fa-phone-alt"></i> +994 55 635 19 44</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:PizzaGold@gmail.com">PizzaGold@gmail.com</a></p>
+            </div>
+
+            <!-- Sosyal Medya -->
+            <div class="footer-social">
+                <h3>Bizi Takip Edin</h3>
+                <a href="https://www.tiktok.com/@pizza_gold_celilabad_" target="_blank"><i class="fab fa-tiktok"></i>
+                    TikTok</a>
+                <a href="https://www.instagram.com/pizza__gold/" target="_blank"><i class="fab fa-instagram"></i>
+                    Instagram</a>
+            </div>
+        </div>
+
+        <!-- Alt kısım -->
+        <div class="footer-bottom">
+            <p>© 2025 Pizza Gold. Butun haqları gizlidır.</p>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
